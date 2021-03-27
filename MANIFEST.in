@@ -1,0 +1,2 @@
+include medacy_bert_model_clinical_notes/model/*
+include medacy_bert_model_clinical_notes/model/torch/*
