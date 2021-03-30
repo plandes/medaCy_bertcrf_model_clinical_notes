@@ -28,7 +28,7 @@ class PyTest(TestCommand):
         sys.exit(errno)
 
 setup(
-    name='medacy_bert_model_clinical_notes',
+    name='medacy_bertcrf_model_clinical_notes',
     version='1.0.1',
     license='GNU GENERAL PUBLIC LICENSE',
     description='medaCy compatable model for mining clinical notes.',

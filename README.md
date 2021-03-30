@@ -1,6 +1,6 @@
 [![spaCy](https://img.shields.io/badge/built%20with-spaCy-09a3d5.svg)](https://spacy.io)
 # medaCy
-:hospital: Clinical Notes Model for medaCy (BERT) :hospital:
+:hospital: Clinical Notes Model for medaCy (BERT+CRF) :hospital:
 
 This repository contains a versioned, medaCy compatible Model for information extraction from clinical notes.
 
@@ -10,6 +10,10 @@ This repository contains a versioned, medaCy compatible Model for information ex
 This is the light-weight version (no metamap) of medaCy's model for extracting 9 unique entities from clinical notes:
 
 `Drug, Strength, Duration, Route, Form, ADE, Dosage, Reason, Frequency`
+
+This model was trained using the
+[ClinicalBERT](https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT)
+pre-trained embeddings with CRF.
 
 # Results
 Model generalization ability is evaluated over 202 patient clinical note files not seen during training. *Strict* indicates exact matches of spans, *Lenient* indicates a fuzzy matching of spans (model predictions are off by single characters).
